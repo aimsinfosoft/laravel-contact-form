@@ -1,5 +1,5 @@
 {
-    "name": "aimsinfosoft/laravel-contact-form",
+    "name": "laracontact/contactform",
     "description": "laravel contact form package",
     "type": "package",
     "license": "MIT",
@@ -12,13 +12,12 @@
     "extra":{
         "laravel":{
         "providers":[
-        "aimsinfosoft\\laravel-contact-form\\ContactFormServiceProvider"]
+        "Laracontact\\Contactform\\ContactFormServiceProvider"]
         }
     },
     "authors": [
         {
-            "name": "KeyurGajera1",
-            "email": "keyur.gajera@aimsinfosoft.com"
+            "name": "Keyur aims"
         }
     ],
     "minimum-stability": "dev",
