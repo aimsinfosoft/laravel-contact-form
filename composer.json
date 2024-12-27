@@ -15,18 +15,6 @@
         "Laracontact\\Contactform\\ContactFormServiceProvider"]
         }
     },
-    {
-      "repositories": [
-        {
-          "type": "vcs",
-          "url": "https://github.com/aimsinfosoft/laravel-contact-form.git"
-        }
-      ],
-      "require": {
-        "aimsinfosoft/laravel-contact-form": "dev-master"
-      }
-    },
-
     "authors": [
         {
             "name": "Keyur aims"
