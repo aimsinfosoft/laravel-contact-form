@@ -1,0 +1,179 @@
+@import url('css2.css');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #002733; /* $main-color */
+  }
+  
+  .orange {
+    color: #FF7A01; /* $orange */
+  }
+  
+  .montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .contact-form {
+    width: 50%; /* Default width for larger screens */
+  }
+  .error-message{
+    color: #ff3333;
+    padding-bottom: 10px;
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 80%; /* Adjust width for tablets */
+    }
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    .contact-form {
+      width: 90%; /* Adjust width for smaller devices */
+    }
+  }
+  
+  
+  .form-container-main {
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+  }
+  
+  .form-container {
+    width: 50%;
+    background-color: #001925; /* $dark-color */
+    padding: 30px 30px 30px 0px;
+    display: flex;
+    border-left: 5px solid #FF7A01; /* $orange */
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  
+    @media (max-width: 1200px) {
+      width: 65%;
+    }
+    @media (max-width: 1100px) {
+      width: 80%;
+    }
+    @media (max-width: 800px) {
+      display: block;
+      padding: 30px;
+      width: 90%;
+  
+      .form-image {
+        height: 300px;
+      }
+    }
+  
+    .form-image {
+      flex-basis: 50%;
+      h1 {
+        margin-left: 30px;
+        color: white;
+        font-weight: 800;
+  
+        @media (max-width: 800px) {
+          margin-left: 0px;
+        }
+      }
+      model-viewer {
+        margin-top: -30px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  
+    .form {
+      flex-basis: 50%;
+      input {
+        color: #87A4B6; /* $light-color */
+        width: 100%;
+        background-color: #002733; /* $main-color */
+        border: none;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+        border-left: 1px solid transparent;
+  
+        &:focus {
+          border-left: 5px solid #FF7A01; /* $orange */
+        }
+      }
+  
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background-color: #013747; /* $medium-light-color */
+        color: #FF7A01; /* $orange */
+        font-weight: bold;
+        resize: none;
+        max-height: 150px;
+        margin-bottom: 10px;
+        border-left: 1px solid transparent;
+        transition: all 0.2s ease-in-out;
+  
+        &:focus {
+          border-left: 5px solid #FF7A01; /* $orange */
+        }
+      }
+  
+      .button-container {
+        display: flex;
+        gap: 10px;
+  
+        .send-button {
+          flex-basis: 100%;
+          background: #FF7A01; /* $orange */
+          padding: 10px;
+          color: #001925; /* $dark-color */
+          text-align: center;
+          font-weight: bold;
+          border: 1px solid transparent;
+          transition: all 0.2s ease-in-out;
+  
+          &:hover {
+            background: transparent;
+            border: 1px solid #FF7A01; /* $orange */
+            color: #FF7A01; /* $orange */
+          }
+        }
+  
+        .reset-button-container {
+          filter: drop-shadow(1px 1px 0px #FF7A01); /* $orange */
+          flex-basis: 30%;
+          .reset-button {
+            position: relative;
+            text-align: center;
+            padding: 10px;
+            color: #FF7A01; /* $orange */
+            font-weight: bold;
+            background: #001925; /* $dark-color */
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+            transition: all 0.2s ease-in-out;
+  
+            &:hover {
+              background: #FF7A01; /* $orange */
+              color: #001925; /* $dark-color */
+            }
+          }
+        }
+      }
+    }
+  }
+  

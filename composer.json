@@ -1,0 +1,25 @@
+{
+    "name": "laracontact/contactform",
+    "description": "laravel contact form package",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laracontact\\Contactform\\": "src/"
+        }
+    },
+    
+    "extra":{
+        "laravel":{
+        "providers":[
+        "Laracontact\\Contactform\\ContactFormServiceProvider"]
+        }
+    },
+    "authors": [
+        {
+            "name": "Keyur aims"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
