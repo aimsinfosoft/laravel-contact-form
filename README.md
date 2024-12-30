@@ -9,7 +9,7 @@ The laravel contact form package is a customizable and easy-to-use package desig
 To install the package, run the command:
 
 ```bash
-composer require laracontact/contactform
+composer require aimsinfosoft/laravel-contact-form
 ```
 
 After installation, you need to publish the configuration file:
