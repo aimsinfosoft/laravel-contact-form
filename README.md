@@ -146,3 +146,71 @@ http://127.0.0.1:8000/contact-form
 ```
 
 You can see the frontend contact form by using this URL: ```http://127.0.0.1:8000/contact-form```.
+
+
+
+
+
+
+
+
+
+   
+## Customization
+
+### Overriding a View File
+
+To override a view file from a package (e.g., `vendor/aimsinfosoft/laravel-contact-form/example.blade.php`), you should follow these steps:
+
+Steps:
+
+* Create the folder structure: Inside the `resources/views` directory, create the `vendor/contactform/` folder.
+
+    Path:  
+
+    ```path
+    resources/views/vendor/contactform/
+    ```
+* #### Copy the package’s view file: 
+    Copy the view file (e.g., ```example.blade.php```) from the package’s ```vendor/contactform/``` directory into the newly created folder in ```resources/views/vendor/contactform/```.
+
+    example: 
+    ``` 
+    resources/views/vendor/contactform/example.blade.php
+    ```
+ 
+### Overriding a Controller File
+
+To override a controller file from a package (e.g., ```vendor/aimsinfosoft/laravel-contact-form/src/Http/Controllers/ExampleController.php```), follow these steps:
+
+Steps:
+
+* Create the folder structure: Inside the ```app/Http/Controllers/``` directory, create the necessary subfolders to match the package’s controller file location.
+
+    Path:
+   ```path
+   app/Http/Controllers/vendor/contactform/src/Http/Controllers/
+    ```
+
+* Copy the package’s controller file: Copy the controller file (e.g., `ExampleController.php`) from the package’s `vendor/contactform/src/Http/Controllers/` directory into the `app/Http/Controllers/vendor/contactform/src/Http/Controllers/` directory.
+
+    example:
+
+    ```
+    app/Http/Controllers/vendor/contactform/src/Http/Controllers/ExampleController.php
+    ```
+
+### Overwrite the Assets Folder
+
+To override a assets folder from a package, you need to run this command:
+
+```
+php artisan vendor:publish --tag=public
+```
+After installation, you need to check a public folder in the directory.
+
+exmple:
+
+```
+public/vendor/contactform
+```
