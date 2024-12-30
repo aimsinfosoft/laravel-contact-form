@@ -20,6 +20,9 @@
       @session('success')
         <div class="alert alert-success">{{ session('success')}}</div>
       @endsession
+      @session('error')
+        <div class="alert alert-danger">{{ session('error')}}</div>
+      @endsession
       @csrf
     <div class="form">
       <input type="text" id="name" name="name" placeholder="Name" value="{{ old('name') }}" autofocus>

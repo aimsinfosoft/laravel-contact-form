@@ -22,8 +22,9 @@ class ContactController extends BaseController
         contact::create($validated);
         
         $admin_email=\config('contactform.admin_email');
-        if($admin_email===null || $admin_email===''){ echo 'The value of admin email not set';
-        }else
+        if($admin_email===null || $admin_email===''){ 
+            return back()->with('error', 'The value of admin email not set!');
+        }
         Mail::to($validated['email'])->send(new contact_mail($validated));
         return back()->with('success', 'Your message has been sent successfully!');
     }
