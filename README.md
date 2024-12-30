@@ -1,4 +1,4 @@
-#laravel-contact-form pcakage 
+#laravel-contact-form package 
 
 Step 1: 
 run command to composer :
