@@ -1,5 +1,5 @@
 {
-    "name": "aimsinfosoft/contactform",
+    "name": "laracontact/contactform",
     "description": "laravel contact form package",
     "type": "package",
     "license": "MIT",
